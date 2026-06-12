@@ -1,182 +1,231 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Flavio Alessandro Yazid Hancco Chaiña | Ciencia de la Computación UCSP</title>
+<title>Flavio Alessandro Yazid Hancco Chaiña | Ciencia de la Computación UCSP</title>
 
-    <meta name="description" content="Página personal de Flavio Alessandro Yazid Hancco Chaiña, estudiante de Ciencia de la Computación en la Universidad Católica San Pablo (UCSP), Arequipa, Perú.">
+<meta name="description" content="Sitio web personal de Flavio Alessandro Yazid Hancco Chaiña, estudiante de Ciencia de la Computación en la Universidad Católica San Pablo (UCSP).">
+<meta name="keywords" content="Flavio Alessandro Yazid Hancco Chaiña, Flavio Hancco, UCSP, Ciencia de la Computación, Programación, Desarrollo de Software, PostgreSQL, C++, GitHub, LinkedIn">
+<meta name="author" content="Flavio Alessandro Yazid Hancco Chaiña">
 
-    <meta name="keywords" content="Flavio Alessandro Yazid Hancco Chaiña, Flavio Hancco, UCSP, Ciencia de la Computación, Arequipa, Programación, GitHub, LinkedIn">
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-    <meta name="author" content="Flavio Alessandro Yazid Hancco Chaiña">
+body{
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background:#f5f7fb;
+    color:#222;
+    line-height:1.6;
+}
 
-    <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-        }
+header{
+    background:linear-gradient(135deg,#0f172a,#1e3a8a);
+    color:white;
+    text-align:center;
+    padding:70px 20px;
+}
 
-        body{
-            font-family: Arial, Helvetica, sans-serif;
-            background:#f4f7fa;
-            color:#333;
-        }
+.avatar{
+    width:130px;
+    height:130px;
+    border-radius:50%;
+    background:white;
+    color:#1e3a8a;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:0 auto 20px auto;
+    font-size:48px;
+    font-weight:bold;
+    box-shadow:0 8px 25px rgba(0,0,0,.25);
+}
 
-        header{
-            background:#0f172a;
-            color:white;
-            text-align:center;
-            padding:50px 20px;
-        }
+header h1{
+    font-size:2.3rem;
+    margin-bottom:10px;
+}
 
-        header h1{
-            font-size:2.3rem;
-            margin-bottom:10px;
-        }
+header p{
+    font-size:1.1rem;
+    opacity:0.95;
+}
 
-        header p{
-            font-size:1.1rem;
-        }
+.buttons{
+    margin-top:25px;
+}
 
-        .container{
-            max-width:1000px;
-            margin:auto;
-            padding:30px;
-        }
+.btn{
+    display:inline-block;
+    margin:8px;
+    padding:12px 22px;
+    background:white;
+    color:#1e3a8a;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
 
-        .card{
-            background:white;
-            padding:25px;
-            margin-bottom:20px;
-            border-radius:12px;
-            box-shadow:0 2px 10px rgba(0,0,0,0.08);
-        }
+.btn:hover{
+    transform:translateY(-2px);
+}
 
-        h2{
-            color:#0f172a;
-            margin-bottom:15px;
-        }
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:35px 20px;
+}
 
-        ul{
-            padding-left:20px;
-        }
+.card{
+    background:white;
+    padding:28px;
+    border-radius:15px;
+    margin-bottom:25px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
 
-        li{
-            margin-bottom:8px;
-        }
+.card h2{
+    color:#1e3a8a;
+    margin-bottom:15px;
+}
 
-        a{
-            color:#0066cc;
-            text-decoration:none;
-        }
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
 
-        a:hover{
-            text-decoration:underline;
-        }
+ul{
+    padding-left:20px;
+}
 
-        footer{
-            text-align:center;
-            padding:20px;
-            color:#666;
-        }
-    </style>
+footer{
+    text-align:center;
+    padding:30px;
+    color:#666;
+}
+
+.tag{
+    display:inline-block;
+    background:#e8eefc;
+    color:#1e3a8a;
+    padding:8px 12px;
+    margin:5px;
+    border-radius:20px;
+    font-size:.95rem;
+}
+</style>
+
 </head>
 
 <body>
 
 <header>
-    <h1>Flavio Alessandro Yazid Hancco Chaiña</h1>
-    <p>Estudiante de Ciencia de la Computación - Universidad Católica San Pablo (UCSP)</p>
+
+<div class="avatar">FH</div>
+
+<h1>Flavio Alessandro Yazid Hancco Chaiña</h1>
+
+<p>
+Estudiante de Ciencia de la Computación
+<br>
+Universidad Católica San Pablo (UCSP)
+</p>
+
+<div class="buttons">
+
+<a class="btn" href="https://github.com/Flavio-HC" target="_blank">
+GitHub
+</a>
+
+<a class="btn" href="https://www.linkedin.com/in/flavio-alessandro-yazid-hancco-chaiña-2b24113a3" target="_blank">
+LinkedIn
+</a>
+
+</div>
+
 </header>
 
 <div class="container">
 
-    <div class="card">
-        <h2>Sobre mí</h2>
+<div class="card">
+<h2>Sobre mí</h2>
 
-        <p>
-            Soy estudiante de Ciencia de la Computación en la Universidad Católica
-            San Pablo (UCSP) de Arequipa, Perú. Me interesan la programación,
-            el desarrollo de software, las bases de datos, la ingeniería de software
-            y las tecnologías modernas.
-        </p>
-    </div>
+<p>
+Soy estudiante de Ciencia de la Computación en la Universidad Católica
+San Pablo (UCSP), interesado en programación, desarrollo de software,
+bases de datos, inteligencia artificial y tecnologías modernas.
+Me encuentro fortaleciendo mis habilidades técnicas mediante proyectos
+académicos y personales relacionados con el desarrollo de aplicaciones
+y sistemas informáticos.
+</p>
+</div>
 
-    <div class="card">
-        <h2>Formación Académica</h2>
+<div class="grid">
 
-        <ul>
-            <li><strong>Universidad:</strong> Universidad Católica San Pablo (UCSP)</li>
-            <li><strong>Carrera:</strong> Ciencia de la Computación</li>
-            <li><strong>Colegio:</strong> I.E. San Juan Bautista de La Salle</li>
-        </ul>
-    </div>
+<div class="card">
+<h2>Formación Académica</h2>
 
-    <div class="card">
-        <h2>Cursos e intereses</h2>
+<ul>
+<li>Universidad Católica San Pablo (UCSP)</li>
+<li>Carrera: Ciencia de la Computación</li>
+<li>I.E. San Juan Bautista de La Salle</li>
+</ul>
 
-        <ul>
-            <li>Programación</li>
-            <li>Bases de Datos</li>
-            <li>Estructuras Discretas</li>
-            <li>Desarrollo Web</li>
-            <li>Ingeniería de Software</li>
-        </ul>
-    </div>
+</div>
 
-    <div class="card">
-        <h2>Profesor Referente</h2>
+<div class="card">
+<h2>Profesor Referente</h2>
 
-        <p>
-            Ernesto Cuadros Vargas
-        </p>
-    </div>
+<p>
+Ernesto Cuadros Vargas
+</p>
 
-    <div class="card">
-        <h2>Proyectos Académicos</h2>
+</div>
 
-        <ul>
-            <li>Sistema Veterinario con PostgreSQL</li>
-            <li>Programas en C++ orientados a objetos</li>
-            <li>Prácticas de estructuras discretas y algoritmos</li>
-            <li>Desarrollo de páginas web con HTML, CSS y JavaScript</li>
-        </ul>
-    </div>
+</div>
 
-    <div class="card">
-        <h2>Enlaces</h2>
+<div class="card">
+<h2>Tecnologías e Intereses</h2>
 
-        <ul>
-            <li>
-                <a href="https://github.com/Flavio-HC" target="_blank">
-                    GitHub
-                </a>
-            </li>
+<span class="tag">C++</span> <span class="tag">PostgreSQL</span> <span class="tag">HTML</span> <span class="tag">CSS</span> <span class="tag">JavaScript</span> <span class="tag">Bases de Datos</span> <span class="tag">Desarrollo Web</span> <span class="tag">Ingeniería de Software</span> <span class="tag">Inteligencia Artificial</span>
 
-            <li>
-                <a href="https://www.linkedin.com/in/flavio-alessandro-yazid-hancco-chaiña-2b24113a3" target="_blank">
-                    LinkedIn
-                </a>
-            </li>
-        </ul>
-    </div>
+</div>
 
-    <div class="card">
-        <h2>Contacto</h2>
+<div class="card">
+<h2>Proyectos</h2>
 
-        <ul>
-            <li>Correo UCSP: flavio.hancco@ucsp.edu.pe</li>
-            <li>Correo Personal: faxintowers@gmail.com</li>
-        </ul>
-    </div>
+<ul>
+<li>Sistema Veterinario con PostgreSQL.</li>
+<li>Programación Orientada a Objetos en C++.</li>
+<li>Desarrollo Web con HTML, CSS y JavaScript.</li>
+<li>Prácticas académicas de algoritmos y estructuras discretas.</li>
+</ul>
+
+</div>
+
+<div class="card">
+<h2>Contacto</h2>
+
+<p>
+Correo institucional:
+<br><br>
+<strong>flavio.hancco@ucsp.edu.pe</strong>
+</p>
+
+</div>
 
 </div>
 
 <footer>
-    © 2026 - Flavio Alessandro Yazid Hancco Chaiña
+© 2026 · Flavio Alessandro Yazid Hancco Chaiña
 </footer>
 
 </body>
