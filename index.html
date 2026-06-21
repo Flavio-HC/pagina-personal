@@ -27,10 +27,36 @@ body{
 }
 
 header{
-    background:linear-gradient(135deg,#0f172a,#1e3a8a);
+    background:linear-gradient(
+        135deg,
+        #0f172a,
+        #1e3a8a
+    );
+
     color:white;
+
     text-align:center;
-    padding:70px 20px;
+
+    padding:100px 20px;
+
+    position:relative;
+    overflow:hidden;
+}
+
+header::before{
+    content:"";
+
+    position:absolute;
+
+    width:350px;
+    height:350px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.05);
+
+    top:-150px;
+    right:-100px;
 }
 
 .avatar{
@@ -182,6 +208,35 @@ footer{
     cursor:default;
 }
 
+.stats{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+
+    margin-top:-30px;
+    margin-bottom:30px;
+}
+
+.stat-box{
+    background:white;
+
+    min-width:150px;
+
+    padding:20px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.stat-box h3{
+    color:#1e3a8a;
+    font-size:2rem;
+}
+
 </style>
 
 </head>
@@ -213,6 +268,30 @@ LinkedIn
 </div>
 
 </header>
+    
+<div class="stats">
+
+<div class="stat-box">
+<h3>5+</h3>
+<p>Cursos</p>
+</div>
+
+<div class="stat-box">
+<h3>4+</h3>
+<p>Proyectos</p>
+</div>
+
+<div class="stat-box">
+<h3>7+</h3>
+<p>Tecnologías</p>
+</div>
+
+<div class="stat-box">
+<h3>∞</h3>
+<p>Aprendiendo</p>
+</div>
+
+</div>
 
 <div class="container">
 <div class="card" id="sobre">
@@ -221,11 +300,8 @@ LinkedIn
 
 <p>
 Soy estudiante de Ciencia de la Computación en la Universidad Católica San Pablo (UCSP), Arequipa, Perú.
-
 Me interesa el desarrollo de software, las bases de datos, la inteligencia artificial, el desarrollo web y la creación de videojuegos.
-
 Además, disfruto aprender nuevos idiomas y actualmente tengo interés en el estudio del inglés, francés y portugués.
-
 Busco fortalecer mis habilidades técnicas mediante proyectos académicos y personales relacionados con programación orientada a objetos, tecnologías web y sistemas informáticos.
 </p>
 
@@ -357,24 +433,63 @@ Kelly Vizconde La Motta
 <span class="tag">Desarrollo Web</span>
 <span class="tag">Inteligencia Artificial</span>
 <span class="tag">Diseño de Videojuegos</span>
-<span class="tag">Ingeniería de Software</span>
-
-<br><br>
-
 <span class="tag">Idiomas</span>
 
 </div>
 
+<div id="proyectos">
+
+<h2 style="color:#1e3a8a;margin-bottom:20px;">
+Proyectos
+</h2>
+
+<div class="grid">
+
 <div class="card">
-<h2>Proyectos</h2>
+<h3>Sistema Veterinario</h3>
 
-<ul>
-<li>Sistema Veterinario con PostgreSQL.</li>
-<li>Programación Orientada a Objetos en C++.</li>
-<li>Desarrollo Web con HTML, CSS y JavaScript.</li>
-<li>Prácticas académicas de algoritmos y estructuras discretas.</li>
-</ul>
+<p>
+Proyecto académico de modelado y gestión de bases de datos utilizando PostgreSQL.
+</p>
 
+</div>
+
+<div class="card">
+<h3>Programación Orientada a Objetos</h3>
+
+<p>
+Aplicaciones desarrolladas en C++ aplicando herencia, encapsulamiento y polimorfismo.
+</p>
+
+</div>
+
+<div class="card">
+<h3>Desarrollo Web</h3>
+
+<p>
+Creación de páginas web utilizando HTML, CSS y JavaScript.
+</p>
+
+</div>
+
+<div class="card">
+<h3>Algoritmos y Estructuras Discretas</h3>
+
+<p>
+Resolución de problemas computacionales y análisis de algoritmos.
+</p>
+
+</div>
+    
+<div class="card">
+<h3>🌍 Aprendizaje de Idiomas</h3>
+
+<p>
+Proyecto personal enfocado en el aprendizaje continuo de idiomas como inglés, francés y portugués mediante recursos digitales, plataformas educativas y práctica autodidacta.
+</p>
+
+</div>
+</div>
 </div>
 
 <div class="card" id="companeros">
