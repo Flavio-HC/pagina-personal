@@ -245,6 +245,44 @@ footer{
     cursor:default;
 }
 
+.cursos-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    gap:20px;
+}
+
+.curso-card{
+    background:#f8fbff;
+
+    border:1px solid #dbeafe;
+
+    border-radius:18px;
+
+    padding:20px;
+
+    transition:.3s;
+}
+
+.curso-card:hover{
+    transform:translateY(-4px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.curso-card h3{
+    color:#1e3a8a;
+
+    margin-bottom:15px;
+
+    border-bottom:2px solid #dbeafe;
+
+    padding-bottom:10px;
+}
+
+.curso-card-full{
+    grid-column:1/-1;
+}
+
 .stats{
     display:flex;
     justify-content:center;
@@ -396,7 +434,10 @@ Sitio Web Cultural
 
 <h2>Cursos y Profesores</h2>
 
-<div class="curso">
+<div class="cursos-grid">
+
+<div class="curso-card">
+
 <h3>Base de Datos</h3>
 
 <a class="prof-btn"
@@ -410,17 +451,21 @@ href="https://www.linkedin.com/in/maria-alejandra-b77244108/"
 target="_blank">
 María Alejandra Cornejo Lupa
 </a>
+
 </div>
 
-<div class="curso">
+<div class="curso-card">
+
 <h3>Cálculo Diferencial e Integral II</h3>
 
 <div class="prof-btn no-link">
 Roberto Alonso Roque Núñez
 </div>
+
 </div>
 
-<div class="curso">
+<div class="curso-card">
+
 <h3>Introducción a Computación</h3>
 
 <a class="prof-btn"
@@ -434,9 +479,11 @@ href="https://www.linkedin.com/in/rosmery-violeta-quispe-zavala-58374638/"
 target="_blank">
 Rosmery Violeta Quispe Zavala
 </a>
+
 </div>
 
-<div class="curso">
+<div class="curso-card">
+
 <h3>Lógica</h3>
 
 <a class="prof-btn"
@@ -445,12 +492,16 @@ target="_blank">
 Kristel Gisselle Loayza Cruz
 </a>
 
-<div class="prof-btn no-link">
+<a class="prof-btn"
+href="https://www.linkedin.com/in/ana-lucia-huerta-salinas-a89600b4/"
+target="_blank">
 Ana Lucía Huerta Salinas
-</div>
+</a>
+
 </div>
 
-<div class="curso">
+<div class="curso-card curso-card-full">
+
 <h3>Programación Orientada a Objetos</h3>
 
 <a class="prof-btn"
@@ -464,6 +515,9 @@ href="https://www.linkedin.com/in/kelly-vizconde-la-motta-3a57a4143/"
 target="_blank">
 Kelly Vizconde La Motta
 </a>
+
+</div>
+
 </div>
 
 </div>
