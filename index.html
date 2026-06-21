@@ -112,16 +112,53 @@ header p{
     transition:.3s;
 }
 
-.link-btn:hover{
-    background:#0f172a;
-    transform:translateY(-2px);
+.link-btn{
+    display:inline-block;
+    margin:5px;
+    padding:10px 18px;
+
+    background:#e8eefc;
+    color:#1e3a8a;
+
+    border-radius:12px;
+
+    text-decoration:none;
+    font-weight:600;
+
+    transition:.3s;
 }
     
 .btn:hover{
     transform:translateY(-4px);
     box-shadow:0 10px 25px rgba(255,255,255,.25);
 }
+    
+.navbar{
+    position:sticky;
+    top:0;
+    z-index:1000;
 
+    background:white;
+
+    display:flex;
+    justify-content:center;
+    gap:30px;
+
+    padding:15px;
+
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+}
+
+.navbar a{
+    color:#1e3a8a;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.navbar a:hover{
+    color:#2563eb;
+}
 .container{
     max-width:1100px;
     margin:auto;
@@ -240,7 +277,23 @@ footer{
 </style>
 
 </head>
+    
+<nav class="navbar">
 
+<a href="#sobre">Sobre mí</a>
+
+<a href="#formacion">Formación</a>
+
+<a href="#cursos">Cursos</a>
+
+<a href="#proyectos">Proyectos</a>
+
+<a href="#companeros">Compañeros</a>
+
+<a href="#contacto">Contacto</a>
+
+</nav>
+    
 <body>
 
 <header>
@@ -302,7 +355,7 @@ LinkedIn
 Soy estudiante de Ciencia de la Computación en la Universidad Católica San Pablo (UCSP), Arequipa, Perú.
 Me interesa el desarrollo de software, las bases de datos, la inteligencia artificial, el desarrollo web y la creación de videojuegos.
 Además, disfruto aprender nuevos idiomas y actualmente tengo interés en el estudio del inglés, francés y portugués.
-Busco fortalecer mis habilidades técnicas mediante proyectos académicos y personales relacionados con programación orientada a objetos, tecnologías web y sistemas informáticos.
+Busco fortalecer mis habilidades técnicas mediante proyectos académicos y personales relacionados con programación orientada a objetos, tecnologías web y b    ases de datos.
 </p>
 
 </div>
@@ -502,7 +555,7 @@ Proyecto personal enfocado en el aprendizaje continuo de idiomas como inglés, f
 
 </div>
 
-<div class="card">
+<div class="card" id="contacto">
 <h2>Contacto</h2>
 
 <p>
